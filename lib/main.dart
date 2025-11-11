@@ -71,7 +71,7 @@ class Login_page_01 extends StatelessWidget {
               SizedBox(height: 20,),
               Center(child: ElevatedButton(onPressed: (){}, 
               child: Padding(
-                padding: const EdgeInsets.only(right: 30,left: 30 ,),
+                padding: const EdgeInsets.only(right: 140,left: 140 , top: 15 , bottom: 15),
                 child: Text("Submit"),
               )))
             ],
