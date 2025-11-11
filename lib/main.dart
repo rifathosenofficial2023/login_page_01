@@ -9,6 +9,38 @@ class Login_page_01 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.blue,
+          title: Text("Login in",
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.black,
+            fontWeight: FontWeight.w500
+          ),
+          ),
+        ),
+          body: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 20,left: 20),
+                child: Text("Login Page",
+                style: TextStyle(
+                            fontSize: 30,
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500
+                ),
+                ),
+              ),
+              
+            ],
+          ),
+
+
+      ),
+    );
   }
 }
