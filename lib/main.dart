@@ -24,6 +24,7 @@ class Login_page_01 extends StatelessWidget {
           ),
         ),
           body: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 20,left: 20),
@@ -35,7 +36,44 @@ class Login_page_01 extends StatelessWidget {
                 ),
                 ),
               ),
-              
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                child: TextField(
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(
+                      Icons.email
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20)
+                    ),
+                    label: Text('Email',
+                    ),
+                    hintText: "Email"
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                child: TextField(
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(
+                      Icons.key
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20)
+                    ),
+                    label: Text('Password',
+                    ),
+                    hintText: "Password"
+                  ),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Center(child: ElevatedButton(onPressed: (){}, 
+              child: Padding(
+                padding: const EdgeInsets.only(right: 30,left: 30 ,),
+                child: Text("Submit"),
+              )))
             ],
           ),
 
